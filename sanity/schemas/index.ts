@@ -1,4 +1,4 @@
-import project from "@/sanity/schemas/project-schema";
+import project from '@/sanity/schemas/project-schema';
 
 const schemas = [project];
 

@@ -1,15 +1,15 @@
-import { Project } from "@/types/project";
-import { createClient, groq } from "next-sanity";
+import { createClient, groq } from 'next-sanity';
+import { Project } from '@/types/Project';
 
 export async function getProjects(): Promise<Project[]> {
-	const client = createClient({
-		projectId: "cxq2tyew",
-		dataset: "production",
-		apiVersion: "2023-12-10",
-	});
+  const client = createClient({
+    projectId: 'cxq2tyew',
+    dataset: 'production',
+    apiVersion: '2023-12-10',
+  });
 
-	return client.fetch(
-		groq`*[_type == "project"]{
+  return client.fetch(
+    groq`*[_type == "project"]{
             _id,
             _createdAt,
             name,
@@ -18,5 +18,5 @@ export async function getProjects(): Promise<Project[]> {
             url, 
             content,
         }`
-	);
+  );
 }
