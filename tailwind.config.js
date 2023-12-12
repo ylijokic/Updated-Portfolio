@@ -11,11 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        forest: '#606c38',
-        eggshell: '#fefae0',
-        orange: '#dda15e',
-        red: '#bc6c25',
-        dark: '#283618',
+        darkblue: '#1F2833',
+        light: '#C5C6C7',
+        teal: '#66FCF1',
+        blue: '#45A29E',
+        dark: '#0B0C10',
       },
     },
   },
