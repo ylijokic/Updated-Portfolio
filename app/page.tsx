@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default async function Home() {
   const projects = await getProjects();
   return (
-    <div className='mx-auto max-w-5xl py-20'>
+    <div className='container mx-auto py-20'>
       <h2 className='text-7xl font-extrabold text-eggshell'>
         Hello I&apos;m{' '}
         <span className='bg-orange bg-clip-text text-transparent'>Charlie</span>
@@ -17,7 +17,7 @@ export default async function Home() {
           <Link
             key={project._id}
             href={`/projects/${project.slug}`}
-            className='rounded-lg border-2 border-orange p-1 transition hover:scale-105 hover:border-eggshell'
+            className='rounded-lg border border-eggshell p-1 transition hover:scale-105 hover:border-orange'
           >
             {project.image && (
               <div className='relative flex items-center justify-center rounded-md p-4'>
