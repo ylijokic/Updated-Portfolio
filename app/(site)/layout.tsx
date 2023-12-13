@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithubSquare } from 'react-icons/fa';
@@ -24,28 +24,26 @@ export default function RootLayout({
       className='min-h-screen bg-gradient-to-b from-dark from-20% to-darkblue to-90%'
     >
       <body>
-        <header className='sticky top-0 m-4 rounded-lg border-b-2 border-blue bg-dark shadow-lg shadow-blue'>
+        <header className='sticky top-0 m-4 rounded-lg border-b border-blue bg-dark shadow-md shadow-teal'>
           <nav className='container mx-auto'>
             <div className='flex items-center justify-between'>
-              <Link href='/'>
-                <Image
-                  src='/logo.png'
-                  alt='Charlie Ylijoki'
-                  width={100}
-                  height={50}
-                  className=''
-                />
-              </Link>
+              <Image
+                src='/logo.png'
+                alt='Charlie Ylijoki'
+                width={100}
+                height={50}
+                className=''
+              />
               <div className='items-center space-x-4 md:flex'>
                 <Link
                   href='/'
-                  className='rounded-lg border border-dark p-2 text-lg text-light transition hover:border-teal'
+                  className='rounded-lg border border-dark p-2 text-lg text-light transition hover:border-blue hover:shadow-md hover:shadow-teal'
                 >
                   About
                 </Link>
                 <Link
-                  href='/'
-                  className='rounded-lg border border-dark p-2 text-lg text-light transition hover:border-teal'
+                  href='/projects'
+                  className='rounded-lg border border-dark p-2 text-lg text-light transition hover:border-blue hover:shadow-md hover:shadow-teal'
                 >
                   Projects
                 </Link>
@@ -54,7 +52,7 @@ export default function RootLayout({
           </nav>
         </header>
         <main className='m-4 py-10'>{children}</main>
-        <footer className='m-4 rounded-lg bg-dark shadow-lg shadow-blue'>
+        <footer className='m-4 rounded-lg bg-dark shadow-md shadow-teal'>
           <div className='container mx-auto flex flex-col items-center justify-center'>
             <div className='flex'>
               <Link

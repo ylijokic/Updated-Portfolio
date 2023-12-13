@@ -1,18 +1,21 @@
-const project = {
-  name: 'project',
-  title: 'Projects',
+const blog = {
+  name: 'blog',
+  title: 'Blogs',
   type: 'document',
   fields: [
     {
-      name: 'name',
-      title: 'Name',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     },
     {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      options: { source: 'name' },
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
     },
     {
       name: 'image',
@@ -28,16 +31,6 @@ const project = {
       ],
     },
     {
-      name: 'url',
-      title: 'Url',
-      type: 'url',
-    },
-    {
-      name: 'urlTwo',
-      title: 'UrlTwo',
-      type: 'url',
-    },
-    {
       name: 'content',
       title: 'Content',
       type: 'array',
@@ -46,4 +39,4 @@ const project = {
   ],
 };
 
-export default project;
+export default blog;
