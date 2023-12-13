@@ -62,7 +62,7 @@ export default function RootLayout({
               >
                 <FaLinkedin
                   size={30}
-                  className='rounded-md border border-light bg-light hover:border-teal hover:bg-teal'
+                  className='rounded-md border border-light bg-light transition hover:border-blue hover:bg-blue hover:shadow-md hover:shadow-teal'
                 />
               </Link>
               <Link
@@ -72,7 +72,7 @@ export default function RootLayout({
               >
                 <FaGithubSquare
                   size={30}
-                  className='rounded-md border border-light bg-light hover:border-teal hover:bg-teal'
+                  className='rounded-md border border-light bg-light transition hover:border-blue hover:bg-blue hover:shadow-md hover:shadow-teal'
                 />
               </Link>
             </div>

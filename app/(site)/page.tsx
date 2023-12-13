@@ -1,10 +1,6 @@
-import { getProjects } from '@/sanity/sanity-utils';
-import { Project } from '@/types/Project';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default async function Home() {
-  const projects = await getProjects();
   return (
     <div className='container mx-auto py-10'>
       <div className=''>

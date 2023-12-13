@@ -15,7 +15,7 @@ export default async function Projects() {
           <Link
             key={project._id}
             href={`/projects/${project.slug}`}
-            className='rounded-lg border-2 border-light p-1 transition hover:scale-105 hover:border-blue hover:shadow-md hover:shadow-teal'
+            className='rounded-lg border-2 border-light p-1 transition hover:scale-105 hover:border-blue hover:shadow-lg hover:shadow-teal'
           >
             {project.image && (
               <div className='relative flex items-center justify-center rounded-md p-4'>
