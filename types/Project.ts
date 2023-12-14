@@ -8,5 +8,6 @@ export type Project = {
   image: string;
   url: string;
   urlTwo: string;
+  showSmall: boolean;
   content: PortableTextBlock[];
 };

@@ -24,7 +24,7 @@ export default function RootLayout({
       className='min-h-screen bg-gradient-to-b from-dark from-20% to-darkblue to-90%'
     >
       <body>
-        <header className='sticky top-0 m-4 rounded-lg border-b border-blue bg-dark shadow-md shadow-teal'>
+        <header className='sticky z-50 top-0 m-4 rounded-lg border-b border-blue bg-dark shadow-md shadow-teal'>
           <nav className='container mx-auto'>
             <div className='flex items-center justify-between'>
               <Image
