@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export default async function Projects() {
   const projects = await getProjects();
+  console.log(projects);
   return (
     <div className='container mx-auto py-10'>
       <span className='mt-2 border-b-2 border-blue text-3xl font-bold text-light'>
@@ -17,14 +18,14 @@ export default async function Projects() {
             href={`/projects/${project.slug}`}
             className='rounded-lg border-2 border-light p-1 transition hover:scale-105 hover:border-blue hover:shadow-lg hover:shadow-teal'
           >
-            {project.image && (
+            {project.imageTwo && (
               <div className='relative flex items-center justify-center rounded-md p-4'>
                 <Image
-                  src={project.image}
+                  src={project.imageTwo}
                   alt={project.name}
-                  width={400}
+                  width={project.showSmall ? 100 : 400}
                   height={200}
-                  className='h-[200px] w-[400px] rounded-lg border border-dark object-contain object-cover'
+                  className={`h-[200px] w-[${project.showSmall ? 100 : 400}px] rounded-lg border border-dark object-contain object-cover`}
                 />
               </div>
             )}

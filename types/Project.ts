@@ -6,6 +6,7 @@ export type Project = {
   name: string;
   slug: string;
   image: string;
+  imageTwo: string;
   url: string;
   urlTwo: string;
   showSmall: boolean;

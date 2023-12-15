@@ -28,6 +28,19 @@ const project = {
       ],
     },
     {
+      name: 'imageTwo',
+      title: 'ImageTwo',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt',
+          type: 'string',
+        },
+      ],
+    },
+    {
       name: 'url',
       title: 'Url',
       type: 'url',
