@@ -77,7 +77,7 @@ export default function RootLayout({
               </Link>
             </div>
             <p className='text-sm text-light'>
-              Created by Charlie Ylijoki, © 2023
+              Built by Charlie Ylijoki with Next.js and Sanity.io © 2024
             </p>
           </div>
         </footer>

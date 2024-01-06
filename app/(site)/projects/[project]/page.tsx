@@ -13,11 +13,11 @@ export default async function Project({ params }: Props) {
 
   return (
     <div className='container mx-auto py-20'>
-      <header className='flex items-center justify-between'>
-        <h1 className='mt-2 border-b-2 border-blue text-3xl font-bold text-light'>
+      <header className='flex flex-wrap items-center justify-between'>
+        <h1 className='mt-2 mb-2 border-b-2 border-blue text-3xl font-bold text-light'>
           {project.name}
         </h1>
-        <div className='items-center space-x-4 md:flex'>
+        <div className='items-center space-x-4 md:flex py-2'>
           <Link
             className='rounded-lg border border-light p-2 text-lg text-light transition hover:border-blue hover:shadow-md hover:shadow-teal'
             href={project.url}

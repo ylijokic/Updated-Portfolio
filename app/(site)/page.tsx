@@ -21,10 +21,9 @@ export default async function Home() {
             className='rounded-lg'
           />
         </div>
-        <p className='py-10 text-xl text-light'>
-          I studied Computer Science at Oregon State University and I am most
-          interested in Frontend/Full Stack Web Development and Mobile
-          Development.
+        <p className='py-10 text-xl text-light text-center'>
+          My name is Charlie Ylijoki and I'm a Software Engineer specializing in Frontend and Full-stack web development.
+          I studied Computer Science at Oregon State University and I have 3 years of professional experience working with technologies such as TypeScript, React, Angular, HTML/CSS, and Java Spring Boot.
           <br />
           <br />
           I love Software Engineering because there are endless learning
@@ -34,9 +33,13 @@ export default async function Home() {
           team.
           <br />
           <br />
-          Take a look at some of my projects, my github page and my blog posts.
-          Also, connect with me on LinkedIn or reach out if you think I would be
-          a good fit for your team. Thank you for visiting my website!
+          Take a look at some of my projects and my GitHub page.
+          Also, feel free to connect with me on LinkedIn or reach out if you think I would be
+          a good fit for your team.
+          <br />
+          <br />
+          <br />
+          Thank you for visiting my website!
         </p>
       </div>
     </div>
